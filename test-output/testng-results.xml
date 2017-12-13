@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" ignored="0" total="43" passed="36">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test REST API" duration-ms="6731" started-at="2017-12-13T07:20:17Z" finished-at="2017-12-13T07:20:23Z">
+    <groups>
+    </groups>
+    <test name="Set data to initial state" duration-ms="1647" started-at="2017-12-13T07:20:17Z" finished-at="2017-12-13T07:20:18Z">
+      <class name="APITest.tests.UsersReset">
+        <test-method status="PASS" signature="ResetUsers()[pri:1, instance:APITest.tests.UsersReset@1753acfe]" name="ResetUsers" duration-ms="1615" started-at="2017-12-12T23:20:17Z" finished-at="2017-12-12T23:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetUsers -->
+      </class> <!-- APITest.tests.UsersReset -->
+    </test> <!-- Set data to initial state -->
+    <test name="Test GET /api/users" duration-ms="690" started-at="2017-12-13T07:20:18Z" finished-at="2017-12-13T07:20:19Z">
+      <class name="APITest.tests.UsersTestGetUsers">
+        <test-method status="PASS" signature="GetUsersStatusCode()[pri:2, instance:APITest.tests.UsersTestGetUsers@5e5792a0]" name="GetUsersStatusCode" duration-ms="125" started-at="2017-12-12T23:20:18Z" depends-on-methods="APITest.tests.UsersTestGetUsers.GetRestAssured" finished-at="2017-12-12T23:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUsersStatusCode -->
+        <test-method status="PASS" signature="GetRestAssured()[pri:1, instance:APITest.tests.UsersTestGetUsers@5e5792a0]" name="GetRestAssured" duration-ms="0" started-at="2017-12-12T23:20:18Z" finished-at="2017-12-12T23:20:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRestAssured -->
+        <test-method status="PASS" signature="GetResponseBody()[pri:3, instance:APITest.tests.UsersTestGetUsers@5e5792a0]" name="GetResponseBody" duration-ms="486" started-at="2017-12-12T23:20:18Z" depends-on-methods="APITest.tests.UsersTestGetUsers.GetUsersStatusCode" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseBody -->
+        <test-method status="PASS" signature="GetResponseHeader()[pri:3, instance:APITest.tests.UsersTestGetUsers@5e5792a0]" name="GetResponseHeader" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestGetUsers.GetUsersStatusCode" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseHeader -->
+        <test-method status="PASS" signature="GetAllUsers()[pri:4, instance:APITest.tests.UsersTestGetUsers@5e5792a0]" name="GetAllUsers" duration-ms="63" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestGetUsers.GetResponseBody" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsers -->
+        <test-method status="PASS" signature="AssertUsers()[pri:5, instance:APITest.tests.UsersTestGetUsers@5e5792a0]" name="AssertUsers" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestGetUsers.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertUsers -->
+      </class> <!-- APITest.tests.UsersTestGetUsers -->
+    </test> <!-- Test GET /api/users -->
+    <test name="Test Data Fields" duration-ms="219" started-at="2017-12-13T07:20:19Z" finished-at="2017-12-13T07:20:19Z">
+      <class name="APITest.tests.UsersTestDataFields">
+        <test-method status="PASS" signature="GetUsersStatusCode()[pri:2, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="GetUsersStatusCode" duration-ms="110" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetRestAssured" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUsersStatusCode -->
+        <test-method status="PASS" signature="GetRestAssured()[pri:1, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="GetRestAssured" duration-ms="0" started-at="2017-12-12T23:20:19Z" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRestAssured -->
+        <test-method status="PASS" signature="GetResponseBody()[pri:3, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="GetResponseBody" duration-ms="15" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetUsersStatusCode" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseBody -->
+        <test-method status="PASS" signature="GetAllUsers()[pri:4, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="GetAllUsers" duration-ms="48" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetResponseBody" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsers -->
+        <test-method status="PASS" signature="AssertFirstName()[pri:5, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="AssertFirstName" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertFirstName -->
+        <test-method status="PASS" signature="AssertDateCreated()[pri:5, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="AssertDateCreated" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertDateCreated -->
+        <test-method status="PASS" signature="AssertEmails()[pri:5, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="AssertEmails" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertEmails -->
+        <test-method status="PASS" signature="AssertIds()[pri:5, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="AssertIds" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertIds -->
+        <test-method status="PASS" signature="AssertLastName()[pri:5, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="AssertLastName" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertLastName -->
+        <test-method status="PASS" signature="AssertLastLogin()[pri:5, instance:APITest.tests.UsersTestDataFields@3bfdc050]" name="AssertLastLogin" duration-ms="0" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestDataFields.GetAllUsers" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertLastLogin -->
+      </class> <!-- APITest.tests.UsersTestDataFields -->
+    </test> <!-- Test Data Fields -->
+    <test name="Test GET user by VALID Id" duration-ms="2026" started-at="2017-12-13T07:20:19Z" finished-at="2017-12-13T07:20:21Z">
+      <class name="APITest.tests.UsersTestGetValidId">
+        <test-method status="PASS" signature="GetRestAssured()[pri:1, instance:APITest.tests.UsersTestGetValidId@6093dd95]" name="GetRestAssured" duration-ms="0" started-at="2017-12-12T23:20:19Z" finished-at="2017-12-12T23:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRestAssured -->
+        <test-method status="PASS" signature="AssertRetreivedUsers()[pri:2, instance:APITest.tests.UsersTestGetValidId@6093dd95]" name="AssertRetreivedUsers" duration-ms="2010" started-at="2017-12-12T23:20:19Z" depends-on-methods="APITest.tests.UsersTestGetValidId.GetRestAssured" finished-at="2017-12-12T23:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertRetreivedUsers -->
+        <test-method status="PASS" signature="GetResponseHeader()[pri:3, instance:APITest.tests.UsersTestGetValidId@6093dd95]" name="GetResponseHeader" duration-ms="0" started-at="2017-12-12T23:20:21Z" depends-on-methods="APITest.tests.UsersTestGetValidId.AssertRetreivedUsers" finished-at="2017-12-12T23:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseHeader -->
+      </class> <!-- APITest.tests.UsersTestGetValidId -->
+    </test> <!-- Test GET user by VALID Id -->
+    <test name="Test GET user by INVALID Id" duration-ms="94" started-at="2017-12-13T07:20:21Z" finished-at="2017-12-13T07:20:22Z">
+      <class name="APITest.tests.UsersTestGetInvalidId">
+        <test-method status="PASS" signature="GetRestAssured()[pri:1, instance:APITest.tests.UsersTestGetInvalidId@53b32d7]" name="GetRestAssured" duration-ms="0" started-at="2017-12-12T23:20:21Z" finished-at="2017-12-12T23:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRestAssured -->
+        <test-method status="PASS" signature="GetInvalidUser()[pri:2, instance:APITest.tests.UsersTestGetInvalidId@53b32d7]" name="GetInvalidUser" duration-ms="79" started-at="2017-12-12T23:20:21Z" depends-on-methods="APITest.tests.UsersTestGetInvalidId.GetRestAssured" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetInvalidUser -->
+        <test-method status="FAIL" signature="GetResponseHeader()[pri:3, instance:APITest.tests.UsersTestGetInvalidId@53b32d7]" name="GetResponseHeader" duration-ms="0" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestGetInvalidId.GetInvalidUser" finished-at="2017-12-12T23:20:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [application/json; charset=utf-8] but found [text/html; charset=utf-8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [application/json; charset=utf-8] but found [text/html; charset=utf-8]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at APITest.tests.UsersTestGetInvalidId.GetResponseHeader(UsersTestGetInvalidId.java:76)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseHeader -->
+      </class> <!-- APITest.tests.UsersTestGetInvalidId -->
+    </test> <!-- Test GET user by INVALID Id -->
+    <test name="Test POST /users, create a new user" duration-ms="928" started-at="2017-12-13T07:20:22Z" finished-at="2017-12-13T07:20:22Z">
+      <class name="APITest.tests.UsersTestPostValid">
+        <test-method status="PASS" signature="CreateNewUser()[pri:1, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="CreateNewUser" duration-ms="110" started-at="2017-12-12T23:20:22Z" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewUser -->
+        <test-method status="FAIL" signature="AssertUserEmail()[pri:3, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertUserEmail" duration-ms="63" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.GetResponseStatus" finished-at="2017-12-12T23:20:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at APITest.tests.UsersTestPostValid.AssertUserEmail(UsersTestPostValid.java:100)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertUserEmail -->
+        <test-method status="PASS" signature="GetResponseStatus()[pri:2, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="GetResponseStatus" duration-ms="0" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.CreateNewUser" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseStatus -->
+        <test-method status="PASS" signature="AssertUserId()[pri:3, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertUserId" duration-ms="125" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.GetResponseStatus" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertUserId -->
+        <test-method status="FAIL" signature="AssertCreatedDate()[pri:4, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertCreatedDate" duration-ms="64" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.AssertUserId" finished-at="2017-12-12T23:20:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at APITest.tests.UsersTestPostValid.AssertCreatedDate(UsersTestPostValid.java:163)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertCreatedDate -->
+        <test-method status="PASS" signature="AssertIsActive()[pri:4, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertIsActive" duration-ms="47" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.AssertUserId" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertIsActive -->
+        <test-method status="PASS" signature="AssertLastLogin()[pri:4, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertLastLogin" duration-ms="142" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.AssertUserId" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertLastLogin -->
+        <test-method status="PASS" signature="AssertUserFirstName()[pri:4, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertUserFirstName" duration-ms="172" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.AssertUserId" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertUserFirstName -->
+        <test-method status="PASS" signature="AssertUserLastName()[pri:4, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="AssertUserLastName" duration-ms="172" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.AssertUserId" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertUserLastName -->
+        <test-method status="PASS" signature="GetResponseHeader()[pri:4, instance:APITest.tests.UsersTestPostValid@4dfa3a9d]" name="GetResponseHeader" duration-ms="0" started-at="2017-12-12T23:20:22Z" depends-on-methods="APITest.tests.UsersTestPostValid.AssertUserId" finished-at="2017-12-12T23:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseHeader -->
+      </class> <!-- APITest.tests.UsersTestPostValid -->
+    </test> <!-- Test POST /users, create a new user -->
+    <test name="Test POST /users, create a new invalid user" duration-ms="110" started-at="2017-12-13T07:20:22Z" finished-at="2017-12-13T07:20:23Z">
+      <class name="APITest.tests.UsersTestPostInvalid">
+        <test-method status="FAIL" signature="CreateEmptyUser()[pri:1, instance:APITest.tests.UsersTestPostInvalid@3c0ecd4b]" name="CreateEmptyUser" duration-ms="110" started-at="2017-12-12T23:20:22Z" finished-at="2017-12-12T23:20:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Correct status code returned expected [HTTP/1.1 400 Bad Request] but found [HTTP/1.1 201 Created]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Correct status code returned expected [HTTP/1.1 400 Bad Request] but found [HTTP/1.1 201 Created]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at APITest.tests.UsersTestPostInvalid.GetResponseStatus(UsersTestPostInvalid.java:57)at APITest.tests.UsersTestPostInvalid.CreateEmptyUser(UsersTestPostInvalid.java:40)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateEmptyUser -->
+      </class> <!-- APITest.tests.UsersTestPostInvalid -->
+    </test> <!-- Test POST /users, create a new invalid user -->
+    <test name="Test PUT, valid update" duration-ms="658" started-at="2017-12-13T07:20:23Z" finished-at="2017-12-13T07:20:23Z">
+      <class name="APITest.tests.UsersTestPutValid">
+        <test-method status="PASS" signature="UpdateUser()[pri:1, instance:APITest.tests.UsersTestPutValid@6500df86]" name="UpdateUser" duration-ms="78" started-at="2017-12-12T23:20:23Z" finished-at="2017-12-12T23:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method status="PASS" signature="GetResponseStatus()[pri:2, instance:APITest.tests.UsersTestPutValid@6500df86]" name="GetResponseStatus" duration-ms="0" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.UpdateUser" finished-at="2017-12-12T23:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetResponseStatus -->
+        <test-method status="PASS" signature="GetRestAssured()[pri:3, instance:APITest.tests.UsersTestPutValid@6500df86]" name="GetRestAssured" duration-ms="16" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.GetResponseStatus" finished-at="2017-12-12T23:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRestAssured -->
+        <test-method status="PASS" signature="GetUpdatedUser()[pri:4, instance:APITest.tests.UsersTestPutValid@6500df86]" name="GetUpdatedUser" duration-ms="78" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.GetRestAssured" finished-at="2017-12-12T23:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUpdatedUser -->
+        <test-method status="FAIL" signature="AssertEmail()[pri:5, instance:APITest.tests.UsersTestPutValid@6500df86]" name="AssertEmail" duration-ms="63" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.GetUpdatedUser" finished-at="2017-12-12T23:20:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at APITest.tests.UsersTestPutValid.AssertEmail(UsersTestPutValid.java:144)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertEmail -->
+        <test-method status="PASS" signature="AssertFname()[pri:5, instance:APITest.tests.UsersTestPutValid@6500df86]" name="AssertFname" duration-ms="188" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.GetUpdatedUser" finished-at="2017-12-12T23:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertFname -->
+        <test-method status="FAIL" signature="AssertIsActive()[pri:5, instance:APITest.tests.UsersTestPutValid@6500df86]" name="AssertIsActive" duration-ms="78" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.GetUpdatedUser" finished-at="2017-12-12T23:20:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at APITest.tests.UsersTestPutValid.AssertIsActive(UsersTestPutValid.java:164)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertIsActive -->
+        <test-method status="PASS" signature="AssertLname()[pri:5, instance:APITest.tests.UsersTestPutValid@6500df86]" name="AssertLname" duration-ms="110" started-at="2017-12-12T23:20:23Z" depends-on-methods="APITest.tests.UsersTestPutValid.GetUpdatedUser" finished-at="2017-12-12T23:20:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertLname -->
+      </class> <!-- APITest.tests.UsersTestPutValid -->
+    </test> <!-- Test PUT, valid update -->
+    <test name="Test PUT, invalid update" duration-ms="110" started-at="2017-12-13T07:20:23Z" finished-at="2017-12-13T07:20:23Z">
+      <class name="APITest.tests.UsersTestPutInvalid">
+        <test-method status="FAIL" signature="RunInvalidUpdate()[pri:1, instance:APITest.tests.UsersTestPutInvalid@6fd02e5]" name="RunInvalidUpdate" duration-ms="108" started-at="2017-12-12T23:20:23Z" finished-at="2017-12-12T23:20:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Correct status code returned expected [HTTP/1.1 400 Bad Request] but found [HTTP/1.1 201 Created]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Correct status code returned expected [HTTP/1.1 400 Bad Request] but found [HTTP/1.1 201 Created]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at APITest.tests.UsersTestPutInvalid.GetResponseStatus(UsersTestPutInvalid.java:71)at APITest.tests.UsersTestPutInvalid.RunInvalidUpdate(UsersTestPutInvalid.java:35)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunInvalidUpdate -->
+      </class> <!-- APITest.tests.UsersTestPutInvalid -->
+    </test> <!-- Test PUT, invalid update -->
+  </suite> <!-- Test REST API -->
+</testng-results>

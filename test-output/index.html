@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_REST_API">
+              <span class="suite-name border-failed">Test REST API</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_REST_API">
+                    <span>C:\Users\superadmin\Desktop\Java_Code_Clinic\Actenum\src\testSuite\TestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_REST_API">
+                    <span class="test-stats">9 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_REST_API">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_REST_API">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_REST_API">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_REST_API">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_REST_API">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods, 7 failed,   36 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_REST_API" class="hide-methods failed suite-Test_REST_API"> (hide)</a> <!-- hide-methods failed suite-Test_REST_API -->
+                      <a href="#" panel-name="suite-Test_REST_API" class="show-methods failed suite-Test_REST_API"> (show)</a> <!-- show-methods failed suite-Test_REST_API -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_REST_API">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertCreatedDate">AssertCreatedDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="AssertEmail">AssertEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="AssertIsActive">AssertIsActive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertUserEmail">AssertUserEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostInvalid" hash-for-method="CreateEmptyUser">CreateEmptyUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetInvalidId" hash-for-method="GetResponseHeader">GetResponseHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutInvalid" hash-for-method="RunInvalidUpdate">RunInvalidUpdate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_REST_API -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_REST_API" class="hide-methods passed suite-Test_REST_API"> (hide)</a> <!-- hide-methods passed suite-Test_REST_API -->
+                      <a href="#" panel-name="suite-Test_REST_API" class="show-methods passed suite-Test_REST_API"> (show)</a> <!-- show-methods passed suite-Test_REST_API -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_REST_API">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="AssertDateCreated">AssertDateCreated</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="AssertEmails">AssertEmails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="AssertFirstName">AssertFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="AssertFname">AssertFname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="AssertIds">AssertIds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertIsActive">AssertIsActive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="AssertLastLogin">AssertLastLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertLastLogin">AssertLastLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="AssertLastName">AssertLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="AssertLname">AssertLname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetValidId" hash-for-method="AssertRetreivedUsers">AssertRetreivedUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertUserFirstName">AssertUserFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertUserId">AssertUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="AssertUserLastName">AssertUserLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetUsers" hash-for-method="AssertUsers">AssertUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="CreateNewUser">CreateNewUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetUsers" hash-for-method="GetAllUsers">GetAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="GetAllUsers">GetAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetInvalidId" hash-for-method="GetInvalidUser">GetInvalidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetUsers" hash-for-method="GetResponseBody">GetResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="GetResponseBody">GetResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetUsers" hash-for-method="GetResponseHeader">GetResponseHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetValidId" hash-for-method="GetResponseHeader">GetResponseHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="GetResponseHeader">GetResponseHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPostValid" hash-for-method="GetResponseStatus">GetResponseStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="GetResponseStatus">GetResponseStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetUsers" hash-for-method="GetRestAssured">GetRestAssured</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="GetRestAssured">GetRestAssured</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetValidId" hash-for-method="GetRestAssured">GetRestAssured</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetInvalidId" hash-for-method="GetRestAssured">GetRestAssured</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="GetRestAssured">GetRestAssured</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="GetUpdatedUser">GetUpdatedUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestGetUsers" hash-for-method="GetUsersStatusCode">GetUsersStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestDataFields" hash-for-method="GetUsersStatusCode">GetUsersStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersReset" hash-for-method="ResetUsers">ResetUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_REST_API" title="APITest.tests.UsersTestPutValid" hash-for-method="UpdateUser">UpdateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_REST_API -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_REST_API" class="panel Test_REST_API">
+          <div class="suite-Test_REST_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.tests.UsersTestPutInvalid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RunInvalidUpdate">
+                  </a> <!-- RunInvalidUpdate -->
+                  <span class="method-name">RunInvalidUpdate</span>
+                  <div class="stack-trace">java.lang.AssertionError: Correct status code returned expected [HTTP/1.1 400 Bad Request] but found [HTTP/1.1 201 Created]
+	at APITest.tests.UsersTestPutInvalid.GetResponseStatus(UsersTestPutInvalid.java:71)
+	at APITest.tests.UsersTestPutInvalid.RunInvalidUpdate(UsersTestPutInvalid.java:35)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-failed -->
+          <div class="suite-Test_REST_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.tests.UsersTestGetInvalidId</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseHeader">
+                  </a> <!-- GetResponseHeader -->
+                  <span class="method-name">GetResponseHeader</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [application/json; charset=utf-8] but found [text/html; charset=utf-8]
+	at APITest.tests.UsersTestGetInvalidId.GetResponseHeader(UsersTestGetInvalidId.java:76)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-failed -->
+          <div class="suite-Test_REST_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.tests.UsersTestPostInvalid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateEmptyUser">
+                  </a> <!-- CreateEmptyUser -->
+                  <span class="method-name">CreateEmptyUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: Correct status code returned expected [HTTP/1.1 400 Bad Request] but found [HTTP/1.1 201 Created]
+	at APITest.tests.UsersTestPostInvalid.GetResponseStatus(UsersTestPostInvalid.java:57)
+	at APITest.tests.UsersTestPostInvalid.CreateEmptyUser(UsersTestPostInvalid.java:40)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-failed -->
+          <div class="suite-Test_REST_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.tests.UsersTestPostValid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertCreatedDate">
+                  </a> <!-- AssertCreatedDate -->
+                  <span class="method-name">AssertCreatedDate</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at APITest.tests.UsersTestPostValid.AssertCreatedDate(UsersTestPostValid.java:163)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertUserEmail">
+                  </a> <!-- AssertUserEmail -->
+                  <span class="method-name">AssertUserEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at APITest.tests.UsersTestPostValid.AssertUserEmail(UsersTestPostValid.java:100)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-failed -->
+          <div class="suite-Test_REST_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.tests.UsersTestPutValid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertEmail">
+                  </a> <!-- AssertEmail -->
+                  <span class="method-name">AssertEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at APITest.tests.UsersTestPutValid.AssertEmail(UsersTestPutValid.java:144)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertIsActive">
+                  </a> <!-- AssertIsActive -->
+                  <span class="method-name">AssertIsActive</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at APITest.tests.UsersTestPutValid.AssertIsActive(UsersTestPutValid.java:164)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-failed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersTestGetInvalidId</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetInvalidUser">
+                  </a> <!-- GetInvalidUser -->
+                  <span class="method-name">GetInvalidUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetRestAssured">
+                  </a> <!-- GetRestAssured -->
+                  <span class="method-name">GetRestAssured</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersTestDataFields</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertDateCreated">
+                  </a> <!-- AssertDateCreated -->
+                  <span class="method-name">AssertDateCreated</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertEmails">
+                  </a> <!-- AssertEmails -->
+                  <span class="method-name">AssertEmails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertFirstName">
+                  </a> <!-- AssertFirstName -->
+                  <span class="method-name">AssertFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertIds">
+                  </a> <!-- AssertIds -->
+                  <span class="method-name">AssertIds</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertLastLogin">
+                  </a> <!-- AssertLastLogin -->
+                  <span class="method-name">AssertLastLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertLastName">
+                  </a> <!-- AssertLastName -->
+                  <span class="method-name">AssertLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUsers">
+                  </a> <!-- GetAllUsers -->
+                  <span class="method-name">GetAllUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseBody">
+                  </a> <!-- GetResponseBody -->
+                  <span class="method-name">GetResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetRestAssured">
+                  </a> <!-- GetRestAssured -->
+                  <span class="method-name">GetRestAssured</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetUsersStatusCode">
+                  </a> <!-- GetUsersStatusCode -->
+                  <span class="method-name">GetUsersStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersTestPostValid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertIsActive">
+                  </a> <!-- AssertIsActive -->
+                  <span class="method-name">AssertIsActive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertLastLogin">
+                  </a> <!-- AssertLastLogin -->
+                  <span class="method-name">AssertLastLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertUserFirstName">
+                  </a> <!-- AssertUserFirstName -->
+                  <span class="method-name">AssertUserFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertUserId">
+                  </a> <!-- AssertUserId -->
+                  <span class="method-name">AssertUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertUserLastName">
+                  </a> <!-- AssertUserLastName -->
+                  <span class="method-name">AssertUserLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateNewUser">
+                  </a> <!-- CreateNewUser -->
+                  <span class="method-name">CreateNewUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseHeader">
+                  </a> <!-- GetResponseHeader -->
+                  <span class="method-name">GetResponseHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseStatus">
+                  </a> <!-- GetResponseStatus -->
+                  <span class="method-name">GetResponseStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersTestGetValidId</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertRetreivedUsers">
+                  </a> <!-- AssertRetreivedUsers -->
+                  <span class="method-name">AssertRetreivedUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseHeader">
+                  </a> <!-- GetResponseHeader -->
+                  <span class="method-name">GetResponseHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetRestAssured">
+                  </a> <!-- GetRestAssured -->
+                  <span class="method-name">GetRestAssured</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersReset</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ResetUsers">
+                  </a> <!-- ResetUsers -->
+                  <span class="method-name">ResetUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersTestGetUsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertUsers">
+                  </a> <!-- AssertUsers -->
+                  <span class="method-name">AssertUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUsers">
+                  </a> <!-- GetAllUsers -->
+                  <span class="method-name">GetAllUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseBody">
+                  </a> <!-- GetResponseBody -->
+                  <span class="method-name">GetResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseHeader">
+                  </a> <!-- GetResponseHeader -->
+                  <span class="method-name">GetResponseHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetRestAssured">
+                  </a> <!-- GetRestAssured -->
+                  <span class="method-name">GetRestAssured</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetUsersStatusCode">
+                  </a> <!-- GetUsersStatusCode -->
+                  <span class="method-name">GetUsersStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+          <div class="suite-Test_REST_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.tests.UsersTestPutValid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertFname">
+                  </a> <!-- AssertFname -->
+                  <span class="method-name">AssertFname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssertLname">
+                  </a> <!-- AssertLname -->
+                  <span class="method-name">AssertLname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetResponseStatus">
+                  </a> <!-- GetResponseStatus -->
+                  <span class="method-name">GetResponseStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetRestAssured">
+                  </a> <!-- GetRestAssured -->
+                  <span class="method-name">GetRestAssured</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetUpdatedUser">
+                  </a> <!-- GetUpdatedUser -->
+                  <span class="method-name">GetUpdatedUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateUser">
+                  </a> <!-- UpdateUser -->
+                  <span class="method-name">UpdateUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_REST_API-class-passed -->
+        </div> <!-- panel Test_REST_API -->
+        <div panel-name="test-xml-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\superadmin\Desktop\Java_Code_Clinic\Actenum\src\testSuite\TestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test REST API&quot;&gt;
+  &lt;test name=&quot;Set data to initial state&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersReset&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Set data to initial state --&gt;
+  &lt;test name=&quot;Test GET /api/users&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestGetUsers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test GET /api/users --&gt;
+  &lt;test name=&quot;Test Data Fields&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestDataFields&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Data Fields --&gt;
+  &lt;test name=&quot;Test GET user by VALID Id&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestGetValidId&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test GET user by VALID Id --&gt;
+  &lt;test name=&quot;Test GET user by INVALID Id&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestGetInvalidId&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test GET user by INVALID Id --&gt;
+  &lt;test name=&quot;Test POST /users, create a new user&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestPostValid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test POST /users, create a new user --&gt;
+  &lt;test name=&quot;Test POST /users, create a new invalid user&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestPostInvalid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test POST /users, create a new invalid user --&gt;
+  &lt;test name=&quot;Test PUT, valid update&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestPutValid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test PUT, valid update --&gt;
+  &lt;test name=&quot;Test PUT, invalid update&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;APITest.tests.UsersTestPutInvalid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test PUT, invalid update --&gt;
+&lt;/suite&gt; &lt;!-- Test REST API --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test REST API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Set data to initial state (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test GET /api/users (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test Data Fields (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test GET user by VALID Id (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test GET user by INVALID Id (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test POST /users, create a new user (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test POST /users, create a new invalid user (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test PUT, valid update (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test PUT, invalid update (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test REST API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test REST API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_REST_API');
+function tableData_Test_REST_API() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AssertRetreivedUsers')
+data.setCell(0, 2, 'APITest.tests.UsersTestGetValidId')
+data.setCell(0, 3, 2010);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ResetUsers')
+data.setCell(1, 2, 'APITest.tests.UsersReset')
+data.setCell(1, 3, 1615);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetResponseBody')
+data.setCell(2, 2, 'APITest.tests.UsersTestGetUsers')
+data.setCell(2, 3, 486);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AssertFname')
+data.setCell(3, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(3, 3, 188);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AssertUserLastName')
+data.setCell(4, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(4, 3, 172);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AssertUserFirstName')
+data.setCell(5, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(5, 3, 172);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'AssertLastLogin')
+data.setCell(6, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(6, 3, 142);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'GetUsersStatusCode')
+data.setCell(7, 2, 'APITest.tests.UsersTestGetUsers')
+data.setCell(7, 3, 125);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AssertUserId')
+data.setCell(8, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(8, 3, 125);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'GetUsersStatusCode')
+data.setCell(9, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(9, 3, 110);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CreateNewUser')
+data.setCell(10, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(10, 3, 110);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'CreateEmptyUser')
+data.setCell(11, 2, 'APITest.tests.UsersTestPostInvalid')
+data.setCell(11, 3, 110);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'AssertLname')
+data.setCell(12, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(12, 3, 110);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'RunInvalidUpdate')
+data.setCell(13, 2, 'APITest.tests.UsersTestPutInvalid')
+data.setCell(13, 3, 108);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'GetInvalidUser')
+data.setCell(14, 2, 'APITest.tests.UsersTestGetInvalidId')
+data.setCell(14, 3, 79);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'GetUpdatedUser')
+data.setCell(15, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(15, 3, 78);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'UpdateUser')
+data.setCell(16, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(16, 3, 78);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'AssertIsActive')
+data.setCell(17, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(17, 3, 78);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'AssertCreatedDate')
+data.setCell(18, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(18, 3, 64);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'GetAllUsers')
+data.setCell(19, 2, 'APITest.tests.UsersTestGetUsers')
+data.setCell(19, 3, 63);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'AssertUserEmail')
+data.setCell(20, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(20, 3, 63);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'AssertEmail')
+data.setCell(21, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(21, 3, 63);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'GetAllUsers')
+data.setCell(22, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(22, 3, 48);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'AssertIsActive')
+data.setCell(23, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(23, 3, 47);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'GetRestAssured')
+data.setCell(24, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(24, 3, 16);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'GetResponseBody')
+data.setCell(25, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(25, 3, 15);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'AssertUsers')
+data.setCell(26, 2, 'APITest.tests.UsersTestGetUsers')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'GetRestAssured')
+data.setCell(27, 2, 'APITest.tests.UsersTestGetUsers')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'GetResponseHeader')
+data.setCell(28, 2, 'APITest.tests.UsersTestGetUsers')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'AssertFirstName')
+data.setCell(29, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'GetRestAssured')
+data.setCell(30, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'AssertDateCreated')
+data.setCell(31, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'AssertLastName')
+data.setCell(32, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'AssertLastLogin')
+data.setCell(33, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'AssertEmails')
+data.setCell(34, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'AssertIds')
+data.setCell(35, 2, 'APITest.tests.UsersTestDataFields')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'GetResponseHeader')
+data.setCell(36, 2, 'APITest.tests.UsersTestGetValidId')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'GetRestAssured')
+data.setCell(37, 2, 'APITest.tests.UsersTestGetValidId')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'GetRestAssured')
+data.setCell(38, 2, 'APITest.tests.UsersTestGetInvalidId')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'GetResponseHeader')
+data.setCell(39, 2, 'APITest.tests.UsersTestGetInvalidId')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'GetResponseHeader')
+data.setCell(40, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'GetResponseStatus')
+data.setCell(41, 2, 'APITest.tests.UsersTestPostValid')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'GetResponseStatus')
+data.setCell(42, 2, 'APITest.tests.UsersTestPutValid')
+data.setCell(42, 3, 0);
+window.suiteTableData['Test_REST_API']= { tableData: data, tableDiv: 'times-div-Test_REST_API'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-Test_REST_API">
+              </div> <!-- times-div-Test_REST_API -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test REST API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_REST_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersReset</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ResetUsers</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestGetUsers</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">GetRestAssured</span>
+                <span class="method-start">1664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetUsersStatusCode</span>
+                <span class="method-start">1664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseBody</span>
+                <span class="method-start">1789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseHeader</span>
+                <span class="method-start">2275 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetAllUsers</span>
+                <span class="method-start">2291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertUsers</span>
+                <span class="method-start">2354 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestDataFields</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">GetRestAssured</span>
+                <span class="method-start">2369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetUsersStatusCode</span>
+                <span class="method-start">2369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseBody</span>
+                <span class="method-start">2479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetAllUsers</span>
+                <span class="method-start">2509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertDateCreated</span>
+                <span class="method-start">2573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertEmails</span>
+                <span class="method-start">2573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertFirstName</span>
+                <span class="method-start">2573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertIds</span>
+                <span class="method-start">2573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertLastLogin</span>
+                <span class="method-start">2588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertLastName</span>
+                <span class="method-start">2588 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestGetValidId</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">GetRestAssured</span>
+                <span class="method-start">2604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertRetreivedUsers</span>
+                <span class="method-start">2604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseHeader</span>
+                <span class="method-start">4614 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestGetInvalidId</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">GetRestAssured</span>
+                <span class="method-start">4739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetInvalidUser</span>
+                <span class="method-start">4754 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GetResponseHeader</span>
+                <span class="method-start">4833 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestPostValid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CreateNewUser</span>
+                <span class="method-start">4848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseStatus</span>
+                <span class="method-start">4958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AssertUserEmail</span>
+                <span class="method-start">4958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertUserId</span>
+                <span class="method-start">5021 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AssertCreatedDate</span>
+                <span class="method-start">5146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertIsActive</span>
+                <span class="method-start">5211 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertLastLogin</span>
+                <span class="method-start">5274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertUserFirstName</span>
+                <span class="method-start">5432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertUserLastName</span>
+                <span class="method-start">5604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseHeader</span>
+                <span class="method-start">5776 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestPostInvalid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateEmptyUser</span>
+                <span class="method-start">5791 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestPutValid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">UpdateUser</span>
+                <span class="method-start">5917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetResponseStatus</span>
+                <span class="method-start">5995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetRestAssured</span>
+                <span class="method-start">5995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">GetUpdatedUser</span>
+                <span class="method-start">6011 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AssertEmail</span>
+                <span class="method-start">6089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertFname</span>
+                <span class="method-start">6152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AssertIsActive</span>
+                <span class="method-start">6371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AssertLname</span>
+                <span class="method-start">6465 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.tests.UsersTestPutInvalid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RunInvalidUpdate</span>
+                <span class="method-start">6590 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test REST API]">
+  <test name="Test GET user by INVALID Id(failed)">
+    <classes>
+      <class name="APITest.tests.UsersTestGetInvalidId">
+        <methods>
+          <include name="GetRestAssured"/>
+          <include name="GetResponseHeader"/>
+          <include name="GetInvalidUser"/>
+        </methods>
+      </class> <!-- APITest.tests.UsersTestGetInvalidId -->
+    </classes>
+  </test> <!-- Test GET user by INVALID Id(failed) -->
+  <test name="Test POST /users, create a new user(failed)">
+    <classes>
+      <class name="APITest.tests.UsersTestPostValid">
+        <methods>
+          <include name="CreateNewUser"/>
+          <include name="AssertCreatedDate"/>
+          <include name="AssertUserEmail"/>
+          <include name="AssertUserId"/>
+          <include name="GetResponseStatus"/>
+        </methods>
+      </class> <!-- APITest.tests.UsersTestPostValid -->
+    </classes>
+  </test> <!-- Test POST /users, create a new user(failed) -->
+  <test name="Test POST /users, create a new invalid user(failed)">
+    <classes>
+      <class name="APITest.tests.UsersTestPostInvalid">
+        <methods>
+          <include name="CreateEmptyUser"/>
+        </methods>
+      </class> <!-- APITest.tests.UsersTestPostInvalid -->
+    </classes>
+  </test> <!-- Test POST /users, create a new invalid user(failed) -->
+  <test name="Test PUT, valid update(failed)">
+    <classes>
+      <class name="APITest.tests.UsersTestPutValid">
+        <methods>
+          <include name="UpdateUser"/>
+          <include name="AssertEmail"/>
+          <include name="GetResponseStatus"/>
+          <include name="GetRestAssured"/>
+          <include name="GetUpdatedUser"/>
+          <include name="AssertIsActive"/>
+        </methods>
+      </class> <!-- APITest.tests.UsersTestPutValid -->
+    </classes>
+  </test> <!-- Test PUT, valid update(failed) -->
+  <test name="Test PUT, invalid update(failed)">
+    <classes>
+      <class name="APITest.tests.UsersTestPutInvalid">
+        <methods>
+          <include name="RunInvalidUpdate"/>
+        </methods>
+      </class> <!-- APITest.tests.UsersTestPutInvalid -->
+    </classes>
+  </test> <!-- Test PUT, invalid update(failed) -->
+</suite> <!-- Failed suite [Test REST API] -->

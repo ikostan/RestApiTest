@@ -1,0 +1,60 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- The main objective of this test suite is to test the APIs and find any problems with it -->
+<suite name="Test REST API">
+	<!-- It is not a test. The main objective is to bring test data to initial state -->
+	<test name="Set data to initial state">
+		<classes>
+			<class name="APITest.tests.UsersReset" />
+		</classes>
+	</test>
+	<!-- The main objective is to test GET /api/users including users array and headers -->
+	<test name="Test GET /api/users">
+		<classes>
+			<class name="APITest.tests.UsersTestGetUsers" />
+		</classes>
+	</test>
+	<!-- The main objective is to test data fields from GET /api/users response (email (unique), id (unique) etc) -->
+	<test name="Test Data Fields">
+		<classes>
+			<class name="APITest.tests.UsersTestDataFields" />
+		</classes>
+	</test>
+	<!-- The main objective is to test GET /api/users/:id + id is valid) -->
+	<test name="Test GET user by VALID Id">
+		<classes>
+			<class name="APITest.tests.UsersTestGetValidId" />
+		</classes>
+	</test>
+	<!-- The main objective is to test GET /api/users/:id + id is invalid) -->
+	<test name="Test GET user by INVALID Id">
+		<classes>
+			<class name="APITest.tests.UsersTestGetInvalidId" />
+		</classes>
+	</test>
+	<!-- The main objective is to test POST /api/users , create a valid user and assert its properties) -->
+	<test name="Test POST /users, create a new user">
+		<classes>
+			<class name="APITest.tests.UsersTestPostValid" />
+		</classes>
+	</test>
+	<!-- The main objective is to test POST /api/users , create an invalid user and assert its properties) -->
+	<test name="Test POST /users, create a new invalid user">
+		<classes>
+			<class name="APITest.tests.UsersTestPostInvalid" />
+		</classes>
+	</test>
+	<!-- The main objective is to test PUT /api/users/:id, valid update) -->
+	<test name="Test PUT, valid update">
+		<classes>
+			<class name="APITest.tests.UsersTestPutValid" />
+		</classes>
+	</test>
+	<!-- The main objective is to test PUT /api/users/:id, invalid update) -->
+	<test name="Test PUT, invalid update">
+		<classes>
+			<class name="APITest.tests.UsersTestPutInvalid" />
+		</classes>
+	</test>
+</suite>
+
