@@ -7,8 +7,9 @@ One of the developers implemented an API to manage the users, albeit under sever
 ### Specification Requirements:
 The Users API is intended to manage the users’ accounts in widely used software. Every user has a first and last name, the unique email address and some flags to show on the UI - e.g. if the user is active or when it was created. All required properties are listed in the table below.
 
+### User Specifications:
 
-
+[![N|Solid](https://github.com/ikostan/RestApiTest/blob/master/user_spec.PNG)]
 
 ### API:
 
